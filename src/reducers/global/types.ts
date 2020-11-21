@@ -1,4 +1,19 @@
-import {UPDATE_APP_STATUS, UPDATE_AUTH_TOKEN} from '../../sagas/global/types'
+import {UPDATE_APP_STATUS, UPDATE_AUTH_TOKEN, ERROR_MESSAGE} from '../../sagas/global/types'
+
+export interface IDisplayErrorMessageAction {
+    readonly type: typeof ERROR_MESSAGE;
+    payload: {
+        message: string
+    }
+}
+
+export const displayErrorMessageProps = (payload: IDisplayErrorMessageAction['payload']): IDisplayErrorMessageAction => {
+    return {
+        type: ERROR_MESSAGE,
+        payload: payload
+    }
+};
+
 export interface IUpdateAppStatusAction {
     readonly type: typeof UPDATE_APP_STATUS;
     payload: {
@@ -27,4 +42,4 @@ export const updateAuthTokenExpProps = (payload: IUpdateAuthTokenExpAction['payl
     }
 };
 
-export type GlobalActions = IUpdateAppStatusAction | IUpdateAuthTokenExpAction;
+export type GlobalActions = IDisplayErrorMessageAction | IUpdateAppStatusAction | IUpdateAuthTokenExpAction;

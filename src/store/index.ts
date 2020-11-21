@@ -4,6 +4,7 @@ import { routerMiddleware, routerReducer } from 'react-router-redux'
 import createSagaMiddleware from 'redux-saga'
 import rootSaga from "../sagas"
 import reducers from '../reducers'
+import axios from 'axios';
 import { isAuth } from './middlewares';
 
 declare global {
@@ -11,6 +12,20 @@ declare global {
         __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
     }
 }
+
+export const axiosInstance = axios.create({
+    baseURL: process.env.REACT_APP_API_GATEWAY_URI,
+    responseType: 'json'
+});
+
+axiosInstance.interceptors.request.use((config: any) => {
+    try {
+        config.headers.Authorization = 'Bearer token';
+        return config;
+    }catch(e){
+
+    }
+});
 
 export const history = createBrowserHistory();
 

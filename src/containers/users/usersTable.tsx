@@ -3,7 +3,7 @@ import i18n from "i18next";
 import TableRow from "../../components/tableRow";
 import './styles/usersTable.scss'
 import {useDispatch} from "react-redux";
-import {updateIsLoadingUsersPropsSaga} from "../../sagas/users/types";
+import {loadUsersPropsSaga} from "../../sagas/users/types";
 import {Row, Col} from "react-bootstrap";
 
 interface IUsersTableProps {
@@ -18,7 +18,7 @@ export default function UsersTable(props: IUsersTableProps) {
                 {i18n.t('Welcome to React')}
             </Col>
             <Col xs={12} className={'text-center'}>
-                <button onClick={() => dispatch(updateIsLoadingUsersPropsSaga({isLoadingUsers: true}))}
+                <button onClick={() => dispatch(loadUsersPropsSaga({userid: 1}))}
                         className={'d-inline'}>Add
                 </button>
                 <button className={'d-inline'}>Remove</button>
