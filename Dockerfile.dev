@@ -1,0 +1,18 @@
+FROM node:12-alpine
+
+COPY ./package.json /usr/src/service/package.json
+COPY ./.npmrc /usr/src/service/.npmrc
+COPY ./.gnpmrc /usr/.npmrc
+COPY ./.yarnrc /usr/src/service/.yarnrc
+COPY ./yarn.lock /usr/src/service/yarn.lock
+
+WORKDIR /usr/src/service
+
+RUN yarn
+RUN npm install
+
+COPY . /usr/src/service
+
+EXPOSE 5000
+
+CMD yarn start

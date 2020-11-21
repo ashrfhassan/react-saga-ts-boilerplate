@@ -18,9 +18,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react",
+    "noImplicitThis": false,
+    "watch": true
   },
   "include": [
-    "src"
+    "./src",
+    "./src/modules.d.ts"
+  ],
+  "exclude": [
+    "./sw-build.js",
+    "./sw-template.js"
   ]
 }
