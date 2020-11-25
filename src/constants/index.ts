@@ -1,3 +1,3 @@
 export default {
-    usersEndPoint: ''
+    pokemonEndPoint: '/pokemon.json'
 }

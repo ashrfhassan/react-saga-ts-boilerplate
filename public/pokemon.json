@@ -1,0 +1,296 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "english": "Bulbasaur"
+    },
+    "img": "https://pokeres.bastionbot.org/images/pokemon/1.png",
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp. Attack": 65,
+      "Sp. Defense": 65,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 4,
+    "name": {
+      "english": "Charmander"
+    },
+    "img": "https://pokeres.bastionbot.org/images/pokemon/4.png",
+    "type": [
+      "Fire"
+    ],
+    "base": {
+      "HP": 39,
+      "Attack": 52,
+      "Defense": 43,
+      "Sp. Attack": 60,
+      "Sp. Defense": 50,
+      "Speed": 65
+    }
+  },
+  {
+    "id": 6,
+    "name": {
+      "english": "Charizard"
+    },
+    "img": "https://pokeres.bastionbot.org/images/pokemon/6.png",
+    "type": [
+      "Fire",
+      "Flying"
+    ],
+    "base": {
+      "HP": 78,
+      "Attack": 84,
+      "Defense": 78,
+      "Sp. Attack": 109,
+      "Sp. Defense": 85,
+      "Speed": 100
+    }
+  },
+  {
+    "id": 7,
+    "name": {
+      "english": "Squirtle"
+    },
+    "img": "https://pokeres.bastionbot.org/images/pokemon/7.png",
+    "type": [
+      "Water"
+    ],
+    "base": {
+      "HP": 44,
+      "Attack": 48,
+      "Defense": 65,
+      "Sp. Attack": 50,
+      "Sp. Defense": 64,
+      "Speed": 43
+    }
+  },
+  {
+    "id": 10,
+    "name": {
+      "english": "Caterpie"
+    },
+    "img": "https://pokeres.bastionbot.org/images/pokemon/10.png",
+    "type": [
+      "Bug"
+    ],
+    "base": {
+      "HP": 45,
+      "Attack": 30,
+      "Defense": 35,
+      "Sp. Attack": 20,
+      "Sp. Defense": 20,
+      "Speed": 45
+    }
+  },
+  {
+    "id": 12,
+    "name": {
+      "english": "Butterfree"
+    },
+    "img": "https://pokeres.bastionbot.org/images/pokemon/12.png",
+    "type": [
+      "Bug",
+      "Flying"
+    ],
+    "base": {
+      "HP": 60,
+      "Attack": 45,
+      "Defense": 50,
+      "Sp. Attack": 90,
+      "Sp. Defense": 80,
+      "Speed": 70
+    }
+  },
+  {
+    "id": 16,
+    "name": {
+      "english": "Pidgey"
+    },
+    "img": "https://pokeres.bastionbot.org/images/pokemon/16.png",
+    "type": [
+      "Normal",
+      "Flying"
+    ],
+    "base": {
+      "HP": 40,
+      "Attack": 45,
+      "Defense": 40,
+      "Sp. Attack": 35,
+      "Sp. Defense": 35,
+      "Speed": 56
+    }
+  },
+  {
+    "id": 19,
+    "name": {
+      "english": "Rattata"
+    },
+    "img": "https://pokeres.bastionbot.org/images/pokemon/19.png",
+    "type": [
+      "Normal"
+    ],
+    "base": {
+      "HP": 30,
+      "Attack": 56,
+      "Defense": 35,
+      "Sp. Attack": 25,
+      "Sp. Defense": 35,
+      "Speed": 72
+    }
+  },
+  {
+    "id": 25,
+    "name": {
+      "english": "Pikachu"
+    },
+    "img": "https://pokeres.bastionbot.org/images/pokemon/25.png",
+    "type": [
+      "Electric"
+    ],
+    "base": {
+      "HP": 35,
+      "Attack": 55,
+      "Defense": 40,
+      "Sp. Attack": 50,
+      "Sp. Defense": 50,
+      "Speed": 90
+    }
+  },
+  {
+    "id": 37,
+    "name": {
+      "english": "Vulpix"
+    },
+    "img": "https://pokeres.bastionbot.org/images/pokemon/37.png",
+    "type": [
+      "Fire"
+    ],
+    "base": {
+      "HP": 38,
+      "Attack": 41,
+      "Defense": 40,
+      "Sp. Attack": 50,
+      "Sp. Defense": 65,
+      "Speed": 65
+    }
+  },
+  {
+    "id": 39,
+    "name": {
+      "english": "Jigglypuff"
+    },
+    "img": "https://pokeres.bastionbot.org/images/pokemon/39.png",
+    "type": [
+      "Normal",
+      "Fairy"
+    ],
+    "base": {
+      "HP": 115,
+      "Attack": 45,
+      "Defense": 20,
+      "Sp. Attack": 45,
+      "Sp. Defense": 25,
+      "Speed": 20
+    }
+  },
+  {
+    "id": 41,
+    "name": {
+      "english": "Zubat"
+    },
+    "img": "https://pokeres.bastionbot.org/images/pokemon/41.png",
+    "type": [
+      "Poison",
+      "Flying"
+    ],
+    "base": {
+      "HP": 40,
+      "Attack": 45,
+      "Defense": 35,
+      "Sp. Attack": 30,
+      "Sp. Defense": 40,
+      "Speed": 55
+    }
+  },
+  {
+    "id": 52,
+    "name": {
+      "english": "Meowth"
+    },
+    "img": "https://pokeres.bastionbot.org/images/pokemon/52.png",
+    "type": [
+      "Normal"
+    ],
+    "base": {
+      "HP": 40,
+      "Attack": 45,
+      "Defense": 35,
+      "Sp. Attack": 40,
+      "Sp. Defense": 40,
+      "Speed": 90
+    }
+  },
+  {
+    "id": 54,
+    "name": {
+      "english": "Psyduck"
+    },
+    "img": "https://pokeres.bastionbot.org/images/pokemon/54.png",
+    "type": [
+      "Water"
+    ],
+    "base": {
+      "HP": 50,
+      "Attack": 52,
+      "Defense": 48,
+      "Sp. Attack": 65,
+      "Sp. Defense": 50,
+      "Speed": 55
+    }
+  },
+  {
+    "id": 55,
+    "name": {
+      "english": "Golduck"
+    },
+    "img": "https://pokeres.bastionbot.org/images/pokemon/55.png",
+    "type": [
+      "Water"
+    ],
+    "base": {
+      "HP": 80,
+      "Attack": 82,
+      "Defense": 78,
+      "Sp. Attack": 95,
+      "Sp. Defense": 80,
+      "Speed": 85
+    }
+  },
+  {
+    "id": 56,
+    "name": {
+      "english": "Mankey"
+    },
+    "img": "https://pokeres.bastionbot.org/images/pokemon/56.png",
+    "type": [
+      "Fighting"
+    ],
+    "base": {
+      "HP": 40,
+      "Attack": 80,
+      "Defense": 35,
+      "Sp. Attack": 35,
+      "Sp. Defense": 45,
+      "Speed": 70
+    }
+  }
+]

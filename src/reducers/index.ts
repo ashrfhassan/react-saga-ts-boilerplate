@@ -1,9 +1,9 @@
 import globalReducer from './global/globalReducer';
-import usersReducer from './users/usersReducer';
+import pokemonReducer from './pokemon/pokemonReducer';
 
 const reducers = {
     globalReducer,
-    usersReducer,
+    pokemonReducer,
 }
 
 export default reducers;
