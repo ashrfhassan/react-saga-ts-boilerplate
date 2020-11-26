@@ -19,6 +19,7 @@ export interface IUpdateIsLoadingPokemonAction {
     readonly type: typeof UPDATE_IS_LOADING_POKEMON;
     payload:{
         isLoadingPokemon: boolean
+        errorMessage: string | undefined
     }
 }
 

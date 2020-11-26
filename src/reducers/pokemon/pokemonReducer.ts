@@ -1,15 +1,18 @@
-import {PokemonActions} from './types'
-import {LOAD_POKEMON, UPDATE_FAVOURITE_POKEMON} from "../../sagas/pokemon/types";
+import {IUpdateIsLoadingPokemonAction, PokemonActions} from './types'
+import {LOAD_POKEMON, UPDATE_FAVOURITE_POKEMON, UPDATE_IS_LOADING_POKEMON} from "../../sagas/pokemon/types";
 import {IPokemon} from "../../dtos/IPokemon";
 
 interface IPokemonState {
     pokemon: IPokemon[],
-    isLoadingPokemon: boolean,
+    loadingPokemon: IUpdateIsLoadingPokemonAction['payload'],
 }
 
 const PokemonState: IPokemonState = {
     pokemon: [],
-    isLoadingPokemon: false
+    loadingPokemon: {
+        isLoadingPokemon: false,
+        errorMessage: undefined
+    }
 };
 
 const pokemonReducer = (state = PokemonState, action: PokemonActions): IPokemonState => {
@@ -18,6 +21,11 @@ const pokemonReducer = (state = PokemonState, action: PokemonActions): IPokemonS
             return {
                 ...state,
                 pokemon: action.payload.pokemon,
+            };
+        case UPDATE_IS_LOADING_POKEMON:
+            return {
+                ...state,
+                loadingPokemon: action.payload,
             };
         case UPDATE_FAVOURITE_POKEMON:
             return {

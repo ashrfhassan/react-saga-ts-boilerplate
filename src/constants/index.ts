@@ -1,3 +1,5 @@
-export default {
+const constants = {
     pokemonEndPoint: '/pokemon.json'
 }
+
+export default constants;

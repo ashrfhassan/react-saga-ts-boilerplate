@@ -19,7 +19,7 @@ function FavouritePokemonTable(props: IPokemonTableProps) {
             <Col sm={12} className={'text-center'}>
             {
                 favPokemon.length > 0? favPokemon.map((pokemon: IPokemon, i) => (
-                        <PokemonRow {...pokemon}/>
+                        <PokemonRow key={i} {...pokemon}/>
                 )):
                     <p className="font-weight-bold font-italic">Oops! Looks like you  haven't added any pokemons yet.</p>
             }

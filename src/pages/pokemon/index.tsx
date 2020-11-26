@@ -19,7 +19,7 @@ export default function PokemonPage(props: IPokemonPageProps) {
                 </Col>
             </Row>
             <Row className={'m-0'}>
-                <Col>
+                <Col className={'text-center'}>
                     <PokemonTable/>
                 </Col>
             </Row>
