@@ -4,6 +4,9 @@ import './index.scss'
 import FavouritePokemonTable from "../../containers/pokemon/favouritePokemonTable";
 import {updateFavouritePokemonPropsSaga} from "../../sagas/pokemon/types";
 import {useDispatch} from "react-redux";
+import { goBack } from 'connected-react-router';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
 
 interface IFavouritePokemonPageProps {
 }
@@ -16,7 +19,11 @@ export default function FavouritePokemonPage(props: IFavouritePokemonPageProps) 
                 <Col>
                     <Row className={'m-0'}>
                         <Col>
-                            <h3 className="font-weight-bolder">Favorites</h3>
+                            <FontAwesomeIcon icon={faArrowLeft}
+                                             className={'cursor btn-back d-inline mr-3'}
+                                             onClick={() => dispatch(goBack())}
+                                             title={'go back'}/>
+                            <h3 className="font-weight-bolder d-inline">Favorites</h3>
                         </Col>
                     </Row>
                 </Col>

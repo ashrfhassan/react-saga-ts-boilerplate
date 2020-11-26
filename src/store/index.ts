@@ -29,6 +29,24 @@ axiosInstance.interceptors.request.use((config: any) => {
 
 export const history = createBrowserHistory();
 
+// preventing pushing same route to history
+const prevHistoryPush = history.push;
+let lastLocation = history.location;
+history.listen(location => {
+    lastLocation = location;
+});
+history.push = (pathname: any, state = {}) => {
+    if (
+        lastLocation === null ||
+        pathname !==
+        lastLocation.pathname + lastLocation.search + lastLocation.hash ||
+        JSON.stringify(state) !== JSON.stringify(lastLocation.state)
+    ) {
+        prevHistoryPush(pathname, state);
+    }
+};
+// end preventing pushing same route to history
+
 const historyMiddleware = routerMiddleware(history);
 
 const sagaMiddleware = createSagaMiddleware()
